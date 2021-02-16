@@ -5,6 +5,7 @@ import { AddTodo } from './src/app/components/AddTodo';
 import { TodoList } from './src/app/components/TodoList';
 import { AntDesign } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
+import { EditTodo } from './src/app/components/EditTodo';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,6 +30,7 @@ const TodoListStackComponent = () => {
   return (
     <TodoListStack.Navigator>
       <TodoListStack.Screen name="タスク一覧" component={TodoList} />
+      <TodoListStack.Screen name="タスク編集" component={EditTodo} />
     </TodoListStack.Navigator>
   );
 }
