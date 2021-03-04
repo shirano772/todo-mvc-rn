@@ -39,7 +39,6 @@ export const AddTodo = () => {
     }
   };
 
-  console.log(todoTitle);
   return (
     <AddTodoPresentation
       created={created}
